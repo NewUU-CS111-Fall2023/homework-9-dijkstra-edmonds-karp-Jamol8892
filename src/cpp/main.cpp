@@ -7,6 +7,8 @@
  */
 
 #include <iostream>
+#include <vector>
+#include <queue>
 #include "task_1.cpp"
 #include "task_2.cpp"
 #include "task_3.cpp"
@@ -17,7 +19,12 @@
 using namespace std;
 
 int main() {
-    // write your code here
+    Problem1 problem1;
+    vector<vector<pair<int, int>>> graph = {
+            // ... graph data ...
+    };
+    int source = 0;  // Or any other starting vertex
+    problem1.dijkstra(graph, source);
 
     return 0;
 }
